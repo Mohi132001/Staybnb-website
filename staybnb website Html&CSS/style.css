@@ -1,0 +1,603 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 8%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.nav-links li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+
+.reg-btn{
+    background-color: white;
+    color:black;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+.header-content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+
+.search-bar{
+    background: white;
+    width: 100%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    color: black;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.search-bar form input{
+    display: block;
+    text-align: center;
+    outline: none;
+    border:0;
+    background: transparent;
+    margin-top: 10px;
+
+}
+.search-bar button{
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar button img{
+    width: 15px;
+    
+}
+ .location-btn{
+    flex: 1;
+}
+.search-bar form label{
+    font-size: 18px;
+    font-weight: 200;
+}
+.container{
+    padding: 60px 12%;
+}
+
+/******************************Exclusives***********************************/
+.sub-title{
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+
+}
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.exclusives div{
+    position: relative;
+}
+
+.exclusives  div img{
+    border-radius: 10px;
+    width: 100%;
+
+
+
+}
+.exclusives span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+ /*********************************************trending places************************************/
+ .trending-place{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+ } 
+ .trending-place img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+ }
+ 
+/****************************************call to know****************************************************/
+.cta{
+   margin: 80px 0;
+    background-image:linear-gradient(to right,#3f2321,transparent), url(images/banner-2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15%;
+    color: #fff;
+    position: relative;
+
+}
+.cta h3{
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+    margin-bottom: 20px;
+}
+.cta p{
+    font-size: 22px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+
+}
+.cta button{
+    background-color: #ff5361;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 18px;
+    display: block;
+}
+/*********************************Travelling stories*************************************/
+.traveller-stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:30px;
+    margin-bottom: 30px;
+}
+.traveller-stories div{
+    position: relative;
+    
+    
+}
+.traveller-stories div img{
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+.traveller-stories p{
+    position: absolute;
+    
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50px,-50px);
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    
+}
+.money-btn{
+    background-color: #ff5361;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 18px;
+    margin: 60px auto;
+    text-align: center;
+    display: block;
+
+}
+.about h2{
+    font-size: 26px;
+    font-weight: 200px;
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+
+}
+.about p{
+    color: #777;
+    font-style: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/********************************************footer***********************************/
+.footer {
+ margin: 80px 0 10px;
+ text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 1px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+
+
+}
+/*************************************************Listing Pages************************************************************/
+.nav-white {
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.05);
+
+}
+.nav-white .nav-links li a{ 
+    color: black;
+}
+.nav-white .reg-btn{
+    background: #ff5361;
+    color: white;
+}
+.nav-white .active::after{
+    background: #ff5361;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+    
+}
+.left-col p{
+    color: #333;
+    
+}
+.left-col h1{
+   color: #333;
+   font-weight: 600;
+   margin-bottom: 30px;
+   font-size: 40px;
+}
+.house{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-text{
+    flex-basis: 58%;
+    color: #555;
+
+}
+.house-img img{
+    width: 95%;
+    border-radius: 12px;
+}
+.house-text p{
+    color: #333;
+
+}
+.house-text h2{
+    color: #333;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-text i{
+    color: #ff5361;
+    width: 18px;
+    margin-top: 20px;
+}
+.amount{
+    text-align: right;
+    color: #555;
+}
+.amount p{
+    font-size: 20px;
+    color: #555;
+}
+.amount h4{
+    color: #333;
+    font-size: 20px;
+}
+.amount span{
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.sidebar{
+    border: 1px solid #555;
+    padding: 20px 30px;
+    margin-bottom: 450%;
+   
+    
+}
+.sidebar h5{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.sidebar .prop{
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+
+    
+}
+.filter{
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+    
+}
+.filter input{
+    margin-right: 20px ;
+    cursor: pointer;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination img{
+    width: 15px;
+    margin: 15px 30px;
+}
+.right-arrow{
+    transform: rotate(180deg);
+}
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination .current{
+    background-color: #333;
+    color: #fff;
+}
+/**************************************House Detsils**************************************************************/
+.house-details{
+    padding: 0 12%;
+}
+.house-title{
+    margin-top: 50px;
+
+}
+.house-title h1{
+    font-weight: 600;
+}
+.house-title .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.house-title span{
+    margin:0 20px;
+}
+.house-title i{
+    color:#ff5361;
+    font-size: 14px;
+}
+.gallery{
+    display: grid;
+    grid-gap:10px;
+    grid-template-areas:
+     'first first . .' 'first first . .';
+     margin: 30px 0;
+
+}
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.gallery-img-1{
+    grid-area: first;
+
+}
+.small-details h2{
+    font-weight: 500;
+}
+.small-details h4{
+    text-align: right;
+    font-size: 22px;
+}
+.line{
+    border: 0;
+    height: 1px;
+    background-color:#ccc ;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+.check-form{
+    margin: 30px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+}
+.check-form label{
+    display: block;
+}
+.check-form div{
+    padding: 20px;
+}
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.check-form button{
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.guest-field{
+    flex:1;
+
+}
+.details-list{
+    list-style: none;
+    margin: 50px 0;
+
+}
+.details-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+.details-list li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.details-list li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+.home-desc{
+    margin-top: 20px;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+.map{
+    margin: 50px 0;
+
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.map b{
+    display: block;
+    margin-bottom:16px ;
+}
+.host{
+    display: flex;
+    align-items: center;
+}
+.host img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.host h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.host i{
+    color: #ff5361;
+
+}
+.contact-host{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    color: #555;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 8px;
+    border: 1px solid #ff5361;
+}
